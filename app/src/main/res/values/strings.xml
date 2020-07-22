@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SMS NOTIFIER</string>
+    <string name="configuration">Configuration</string>
+    <string name="click_to_add_contact">cliquez pour ajouter un contact</string>
+</resources>

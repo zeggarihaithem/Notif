@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/list_contact_fragment">
+
+    <fragment
+        android:id="@+id/list_contact_fragment"
+        android:name="com.example.tdm2_td02_exo2.ui.main.listContact.ListContactFragment"
+        tools:layout="@layout/list_contact_fragment">
+        <action
+            android:id="@+id/list_to_configuration_action"
+            app:destination="@+id/configuration_fragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/configuration_fragment"
+        android:name="com.example.tdm2_td02_exo2.ui.main.configuration.ConfigurationFragment"
+        tools:layout="@layout/configuration_fragment">
+        <action
+            android:id="@+id/configuration_to_list_action"
+            app:destination="@+id/play_video_fragment" />
+
+    </fragment>
+
+
+</navigation>

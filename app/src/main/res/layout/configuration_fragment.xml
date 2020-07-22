@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.configuration.ConfigurationFragment"
+    android:padding="8dp">
+
+   <TextView
+       android:id="@+id/text_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/click_to_add_contact"
+       android:textAppearance="@style/TextAppearance.AppCompat.Large"
+       android:layout_alignParentTop="true"
+       android:gravity="center"
+       android:layout_marginBottom="8dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/list_contact_fragment"
+        android:layout_below="@+id/text_view"/>
+
+</RelativeLayout>
+
+
+
+
